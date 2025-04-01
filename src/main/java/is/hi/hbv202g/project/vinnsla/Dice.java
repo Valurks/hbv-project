@@ -1,4 +1,4 @@
-package vinnsla;
+package is.hi.hbv202g.project.vinnsla;
 
 import javafx.beans.property.SimpleIntegerProperty;
 

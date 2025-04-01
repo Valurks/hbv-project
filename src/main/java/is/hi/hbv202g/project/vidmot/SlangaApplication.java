@@ -1,4 +1,4 @@
-package vidmot;
+package is.hi.hbv202g.project.vidmot;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

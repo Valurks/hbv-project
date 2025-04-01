@@ -1,4 +1,4 @@
-package vidmot;
+package is.hi.hbv202g.project.vidmot;
 
 import javafx.fxml.FXML;
 import javafx.geometry.HPos;
@@ -9,9 +9,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import vinnsla.Player;
-import vinnsla.Game;
-import vinnsla.Dice;
+import is.hi.hbv202g.project.vinnsla.Player;
+import is.hi.hbv202g.project.vinnsla.Game;
+import is.hi.hbv202g.project.vinnsla.Dice;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -59,11 +59,14 @@ public class SlangaController {
         String[] colors = new String[]{"FF8080", "F6FDC3", "FFCF96", "CDFAD5"};
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 6; j++) {
+                int col = (i % 2 == 0) ? j : 6 - j - 1; // Ef oddatölu röð -> byrja fra hægri
+                int row = 6 - i - 1; // Byrja niðri
                 int index = i * 6 + j + 1;
                 labels.add(new Label(index + ""));
                 Label label = labels.get(index - 1);
                 label.setStyle("-fx-background-color: #" + colors[(int) (Math.random() * colors.length)] + ";");
-                fxGrid.add(label, j, 4 - i);
+                fxGrid.add(label, col, row);
+
             }
         }
     }
@@ -121,7 +124,7 @@ public class SlangaController {
     }
 
     public void visualSnakesLadders() {
-        HashMap<Integer, Integer> map = game.getSlongurStigar();
+        HashMap<Integer, Integer> map = game.getSnakesAndLadders();
         for (int key : map.keySet()) {
             String img;
             int size;

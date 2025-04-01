@@ -1,7 +1,7 @@
-package vidmot;
+package is.hi.hbv202g.project.vidmot;
 
 import javafx.scene.control.TextInputDialog;
-import vinnsla.Player;
+import is.hi.hbv202g.project.vinnsla.Player;
 
 import java.util.Optional;
 

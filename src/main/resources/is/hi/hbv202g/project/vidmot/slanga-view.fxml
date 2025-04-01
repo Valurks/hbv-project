@@ -5,7 +5,8 @@
 <?import javafx.scene.layout.*?>
 
 <VBox alignment="CENTER" spacing="20.0" stylesheets="@css/slanga.css" xmlns="http://javafx.com/javafx/17.0.12"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.SlangaController" styleClass="window">
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="is.hi.hbv202g.project.vidmot.SlangaController"
+      styleClass="window">
     <GridPane fx:id="fxGrid" styleClass="grid">
         <columnConstraints>
             <ColumnConstraints/>
@@ -23,12 +24,12 @@
             <RowConstraints/>
         </rowConstraints>
         <ImageView fx:id="fxPlayer2Dislpay" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true"
-                   GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="CENTER"
+                   GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.halignment="CENTER"
                    GridPane.valignment="CENTER">
             <Image url="@images/characters/blue.png"/>
         </ImageView>
         <ImageView fx:id="fxPlayer1Dislpay" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true"
-                   GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="CENTER"
+                   GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.halignment="CENTER"
                    GridPane.valignment="CENTER">
             <Image url="@images/characters/red.png"/>
         </ImageView>

@@ -1,8 +1,7 @@
-module vidmot.slanga {
+module is.hi.hbv202g.project.slanga {
     requires javafx.controls;
     requires javafx.fxml;
 
-
-    opens vidmot to javafx.fxml;
-    exports vidmot;
+    opens is.hi.hbv202g.project.vidmot to javafx.fxml;
+    exports is.hi.hbv202g.project.vidmot;
 }

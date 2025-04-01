@@ -1,4 +1,4 @@
-package vinnsla;
+package is.hi.hbv202g.project.vinnsla;
 
 import java.util.HashMap;
 
@@ -16,16 +16,16 @@ public class SnakesAndLadders {
     }
 
     public int newTile(Player player) {
-        int gamli = player.getTile();
-        int nyi = snakesAndLadders.getOrDefault(gamli, 0);
-        if (nyi == 0) {
-            return gamli;
-        } else if (nyi > gamli) {
+        int tileBefore = player.getTile();
+        int tileAfter = snakesAndLadders.getOrDefault(tileBefore, 0);
+        if (tileAfter == 0) {
+            return tileBefore;
+        } else if (tileAfter > tileBefore) {
             player.setMessage(player.getName() + " fór upp stigann!");
         } else {
             player.setMessage(player.getName() + " fór niður snákinn :(");
         }
-        return nyi;
+        return tileAfter;
     }
 
     public HashMap<Integer, Integer> getSnakesAndLadders() {

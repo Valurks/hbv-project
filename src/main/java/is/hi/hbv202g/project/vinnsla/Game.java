@@ -1,4 +1,4 @@
-package vinnsla;
+package is.hi.hbv202g.project.vinnsla;
 
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -36,7 +36,7 @@ public class Game {
         return player2;
     }
 
-    public HashMap<Integer, Integer> getSlongurStigar() {
+    public HashMap<Integer, Integer> getSnakesAndLadders() {
         return snakesAndLadders.getSnakesAndLadders();
     }
 
